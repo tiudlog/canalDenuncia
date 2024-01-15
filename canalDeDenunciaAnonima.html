@@ -48,7 +48,7 @@
         }
 
         button, .btn {
-            background-color: #000000; /* Cor do Google Forms */
+            background-color: #000000; 
             color: #fff;
             border: none;
             padding: 10px 15px;
@@ -57,8 +57,10 @@
         }
 
         .btn:hover, button:hover {
-            background-color: #c91111; /* Cor do Google Forms quando hover */            
-        }        
+            background-color: #ff0000;             
+        }       
+        
+        
     </style>    
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
@@ -73,10 +75,10 @@
         </div>
         <div class="form-group">            
             <label for="mensagem">Digite sua denúncia:</label>
-            <textarea class="form-control" id="mensagem" name="mensagem" rows="6" cols="50"></textarea>
+            <textarea class="form-control" id="mensagem" name="mensagem" rows="6" cols="50"></textarea>            
         </div>
 
-        <button type="button" class="btn btn-primary" onclick="enviarDenuncia()">ENVIAR DENÚNCIA ANÔNIMA</button>
+        <button type="button" class="btn btn-sencondary" onclick="enviarDenuncia()">ENVIAR DENÚNCIA ANÔNIMA</button>
     </form>
 
     <script>
@@ -113,7 +115,9 @@
 
             // Limpar o campo de texto após o envio
             document.getElementById('mensagem').value = '';
-        }
+        }      
+
+
     </script>
 
 </body>
